@@ -11,11 +11,14 @@
         <a class="twitter-share-button"
         href="https://twitter.com/intent/tweet?text=Check out this website to learn more about the Twitter activity of world leaders!"
         data-size="large">
-    Tweet</a>
+        <a href=""></a>
+        <!--add whatsapp icon-->
+        <img src = "https://image.freepik.com/free-vector/whatsapp-icon-design_23-2147900927.jpg" height="50" size="50" onclick="openWhatsApp()"> 
 
     <script>window.twttr = (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0],
         t = window.twttr || {};
+
       if (d.getElementById(id)) return t;
       js = d.createElement(s);
       js.id = id;
@@ -28,6 +31,13 @@
       };
 
       return t;
-    }(document, "script", "twitter-wjs"));</script>
+    }(document, "script", "twitter-wjs"));
+    <!--add whatsapp link->
+      function openWhatsApp() {  
+      window.open('https://web.whatsapp.com://send?text= https://www.youtube.com/watch?v=ohpCMpderow');  
+      }  
+
+    </script>
+
     </body>
 </html>
