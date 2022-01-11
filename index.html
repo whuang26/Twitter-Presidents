@@ -6,5 +6,28 @@
     <body>
         <h1>Our Demonstration Website</h1>
         <a href='our-team/index.html'>Learn more about our team</a>
+        <a href='about-project/index.html'>Learn more about the project</a>
+    
+        <a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet?text=Check out this website to learn more about the Twitter activity of world leaders!"
+        data-size="large">
+    Tweet</a>
+
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
     </body>
 </html>
