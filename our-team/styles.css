@@ -1,0 +1,90 @@
+h1 {
+  font-size: 5em;
+  font-family:  "Helvetica";
+  -webkit-text-stroke: 4px #769fcd;
+  -webkit-text-fill-color: white;
+  text-align: center;
+}
+
+body {
+
+  font-family:  "Helvetica";
+
+}
+
+.outer-box-frame {
+  margin-top: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+}
+
+.Will {
+
+  display: flex;
+
+}
+
+.Will {
+
+  content: "/images/gifs/FlagUS.gif";
+  padding-right: 3px;
+  
+}
+
+.imgContainer {
+
+  float: left;
+
+}
+
+.linkedin {
+
+  height: 38px; 
+  width:  100px; 
+  padding: 3px;
+
+}
+
+.twitter {
+
+  height: 38px; 
+  width:  100px; 
+  padding: 3px;
+
+}
+
+.github {
+
+  height: 38px; 
+  width:  115px; 
+  padding: 3px;
+
+}
+
+.email {
+
+  height: 38px; 
+  width:  130px; 
+  padding: 3px;
+
+}
+
+img.right {
+  display: block;
+  vertical-align: text-top;
+  margin-left: auto;
+  margin-right: 50px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+img.left {
+  display: block;
+  vertical-align: text-top;
+  margin-left: 0px;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 200px;
+}
+
