@@ -19,17 +19,14 @@ body {
   margin-bottom: 200px;
 }
 
-.Will {
+.flags {
 
-  display: flex;
+  float:  none;
+  vertical-align: middle;
+  border-radius: 85%;
+  width: 65px;
+  height: 60px;
 
-}
-
-.Will {
-
-  content: "/images/gifs/FlagUS.gif";
-  padding-right: 3px;
-  
 }
 
 .imgContainer {
