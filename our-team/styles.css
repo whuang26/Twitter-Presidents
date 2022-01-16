@@ -85,3 +85,6 @@ img.left {
   width: 200px;
 }
 
+img:hover {
+    cursor: pointer;
+}
