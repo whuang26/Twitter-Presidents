@@ -3,6 +3,11 @@
     <head>
 
         <meta charset="UTF-8">
+        <!-- for Facebook share button -->
+        <meta property="og:url"           content="https://whuang26.github.io/Twitter-Presidents/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Who Tweets What" />
+        <meta property="og:description"   content="A visualization of 4 president's tweets" />
 
         <title>Who Tweets What </title>
 
@@ -12,6 +17,9 @@
 
     </head>
     <body>
+
+      <div id="fb-root"></div>
+
 
         <header>
 
@@ -31,35 +39,12 @@
 
           <h1> Who Tweets What </h1>
     
-        <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet?text=Check out this website to learn more about the Twitter activity of world leaders!"
-        data-size="large">
-        <a href=""></a>
-        <!--add whatsapp icon-->
-        <img src = "https://image.freepik.com/free-vector/whatsapp-icon-design_23-2147900927.jpg" height="50" size="50" onclick="openWhatsApp()"> 
+        <!-- facebook share button -->
+        
+        <div class="fb-share-button" data-href="https://whuang26.github.io/Twitter-Presidents/" data-layout="box_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwhuang26.github.io%2FTwitter-Presidents%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 
-    <script>window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-
-      return t;
-    }(document, "script", "twitter-wjs"));
-    <!--add whatsapp link->
-      function openWhatsApp() {  
-      window.open('https://web.whatsapp.com://send?text= https://www.youtube.com/watch?v=ohpCMpderow');  
-      }  
-
+        <script src="main.js"></script>
+    
     </script>
 
     </body>
