@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+
 <html>
     <head>
 
         <meta charset="UTF-8">
+        <!-- for Facebook share button -->
+        <meta property="og:url"           content="https://whuang26.github.io/Twitter-Presidents/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Who Tweets What" />
+        <meta property="og:description"   content="A visualization of 4 president's tweets" />
 
         <title>Who Tweets What </title>
 
@@ -11,7 +17,11 @@
         <link rel="stylesheet" href="styles.css">
 
     </head>
+  
     <body>
+
+      <div id="fb-root"></div>
+
 
         <header>
 
@@ -30,8 +40,7 @@
           </div>
 
           <h1> Who Tweets What </h1>
-
-            
+     
           <h2>U.S. President Joe Biden</h2>
             <p>Of the top ten most relevant terms in President Biden’s Tweets in 2021, seven of them relate to key legislation that he championed as president. The top most relevant phrase was “bipartisan infrastructure deals”, which occurred thirty times. This phrase is referring to an Act formally known as the “Infrastructure Investment and Jobs Act”. The bill passed on November 6, 2021. The Act was initially a $715 billion infrastructure package, but was later amended to include approximately $1.2 trillion in spending for items such as broadband access, clean water, electric gruid renewal in addition to the transportation and road proposals of the original House bill.</p>
 
@@ -42,39 +51,26 @@
             <p>The most frequent terms in President Biden’s Tweets are also connected to the legislation as well. The top five terms are: “build” (127 times), “jobs” (85 times), “economy” (67 times), “country” (60 times), and “better agenda” (32 times). These terms paint a picture of a President whose goal in 2021 is to support and champion legislation that would dramatically improve the economic and social infrastructure of the U.S. </p>
 
           <h2>Turkey President Recep Tayyip Erdoğan</h2>
-            <p>For President Erdoğan, many of the most relevant terms and phrases are salutations and greetings. The most relevant one is “hayırlı olmasını diliyorum” (32 times), which translates to “I wish you good luck”. Another similar terms in the top ten are “milletimize hayırlı olmasını” (12 times), which translates to “good luck to our nation”, and “tebrik ediyorum” (31 times), which translates to “congratulations”. These phrases do not refer to one particular event or legislation that occurred in 2021. Instead, they are used by President Erdoğan to wish for the success of various events throughout the year. For example, he used the phrase “hayırlı olmasını diliyorum” to wish good luck for the opening of the New Adana Stadium on February 19, 2021 <a href="https://twitter.com/RTErdogan/status/1362824271467339777">(link)</a>, for the launch of the Türksat 5A satellite on June 28, 2021 <a href="https://twitter.com/RTErdogan/status/1409500741300109315">(link)</a>, and that the newly launched Turkovac coronavirus vaccine benefit all of humanity on December 22, 2021 <a href="https://twitter.com/RTErdogan/status/1473619005953003523">(link)</a>. The first phrase not to  be in a salutation is the 19th one, “gazi mustafa kemal” (five times). Gazi is a Turkish title for veterans and Turkic Muslim champions, and “mustafa kemal” is referring to  Mustafa Kemal Atatürk, the founding father of the Republic of Turkey who served as its first president from 1923 to 1938. The Tweets featuring Mustafa Kemal Atatürk are about honoring his legacy. For example, President Erdoğan commemorated Turkey’s Republic Day on October 29 by thanking Mustafa Kemal Atatürk and expressing his gratitude for founding the modern republic <a href="https://twitter.com/RTErdogan/status/1453964816092123136">(link)</a>. Overall, based on an analysis of the most frequent keywords and phrases, President Erdoğan uses Twitter to show gratitude for projects and initiatives, and to spotlight positive developments.
-
-    
+            <p>For President Erdoğan, many of the most relevant terms and phrases are salutations and greetings. The most relevant one is “hayırlı olmasını diliyorum” (32 times), which translates to “I wish you good luck”. Another similar terms in the top ten are “milletimize hayırlı olmasını” (12 times), which translates to “good luck to our nation”, and “tebrik ediyorum” (31 times), which translates to “congratulations”. These phrases do not refer to one particular event or legislation that occurred in 2021. Instead, they are used by President Erdoğan to wish for the success of various events throughout the year. For example, he used the phrase “hayırlı olmasını diliyorum” to wish good luck for the opening of the New Adana Stadium on February 19, 2021 <a href="https://twitter.com/RTErdogan/status/1362824271467339777">(link)</a>, for the launch of the Türksat 5A satellite on June 28, 2021 <a href="https://twitter.com/RTErdogan/status/1409500741300109315">(link)</a>, and that the newly launched Turkovac coronavirus vaccine benefit all of humanity on December 22, 2021 <a href="https://twitter.com/RTErdogan/status/1473619005953003523">(link)</a>. The first phrase not to  be in a salutation is the 19th one, “gazi mustafa kemal” (five times). Gazi is a Turkish title for veterans and Turkic Muslim champions, and “mustafa kemal” is referring to  Mustafa Kemal Atatürk, the founding father of the Republic of Turkey who served as its first president from 1923 to 1938. The Tweets featuring Mustafa Kemal Atatürk are about honoring his legacy. For example, President Erdoğan commemorated Turkey’s Republic Day on October 29 by thanking Mustafa Kemal Atatürk and expressing his gratitude for founding the modern republic <a href="https://twitter.com/RTErdogan/status/1453964816092123136">(link)</a>. Overall, based on an analysis of the most frequent keywords and phrases, President Erdoğan uses Twitter to show gratitude for projects and initiatives, and to spotlight positive developments.</p>
+          
+        <!-- facebook share button -->
+        
+        <div class="fb-share-button" data-href="https://whuang26.github.io/Twitter-Presidents/" data-layout="box_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwhuang26.github.io%2FTwitter-Presidents%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+         
         <a class="twitter-share-button"
         href="https://twitter.com/intent/tweet?text=Check out this website to learn more about the Twitter activity of world leaders!"
-        data-size="large">
-        <a href=""></a>
+        data-size="large"><a href=""></a>
         <!--add whatsapp icon-->
         <img src = "https://image.freepik.com/free-vector/whatsapp-icon-design_23-2147900927.jpg" height="50" size="50" onclick="openWhatsApp()"> 
 
-    <script>window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-
-      return t;
-    }(document, "script", "twitter-wjs"));
+    <script>
     <!--add whatsapp link->
       function openWhatsApp() {  
       window.open('https://web.whatsapp.com://send?text= https://www.youtube.com/watch?v=ohpCMpderow');  
-      }  
-
+      } 
     </script>
-
+          
+    <script src="main.js"></script>
+          
     </body>
 </html>
