@@ -135,4 +135,20 @@ a {
   height: 325px;
 
 }
-}
+
+.footer {
+
+  font-family: Didot, serif;
+  font-size: 35px;
+  width: 100% !important;  
+  max-width: 100% !important;
+  min-width: 100% !important;
+  text-align: center;
+  position: relative;
+  background-color: #ddd !important; 
+  opacity: .5;
+  z-index:100;
+  left: 0;
+  height: 33px;
+
+ }
