@@ -139,7 +139,7 @@ a {
 .footer {
 
   font-family: Didot, serif;
-  font-size: 35px;
+  font-size: 20px;
   width: 100% !important;  
   max-width: 100% !important;
   min-width: 100% !important;
@@ -149,6 +149,6 @@ a {
   opacity: .5;
   z-index:100;
   left: 0;
-  height: 33px;
+  height: 20px;
 
  }
