@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>About The Project</title>
     </head>
     <body>
@@ -14,6 +15,18 @@
 
         <h2>GitHub Repository</h2>
         <p>This website was created as an assignment for the <a href="https://www.hks.harvard.edu/courses/programming-and-data-policymakers/" target="_blank"><b>DPI 691M: Programming and Data for Policymakers</b></a> course at Harvard Kennedy School. Its code is public and can be accessed in <a href="https://github.com/whuang26/Twitter-Presidents/" target="_blank">this repository</a>.</p>
+
+        <h2>About the Word Clouds</h2> 
+        <p>The word clouds were generated using the <a href="https://monkeylearn.com/word-cloud/">WordCloud Generator</a> by MonkeyLearn. The WordCloud Generator allows any user to upload a text file and it will generate a visual representation of the text, in which the words appear bigger the more often they are mentioned. The Generator from MonkeyLearn is programmed with an algorithm to automatically detect collocations, which are words that often go together. This algorithm allows for phrases to be generated instead of simply single words, and often provide more context.</p>
+
+        <p>Once a user uploads a text file, the WordCloud Generator allows the user to sort the words and phrases by relevancy or frequency. Sorting by frequency will put the words/phrases that appear the most often at the top. MonkeyLearn uses a relative frequency, which is frequency normalized by the maximum value in which valid terms in other terms are taken into account. For example, if you have “dog” and “hot dog”, the weight of “dog” is removed from the weight of “hot dog”. The frequency of the word “dog” is then calculated only when it appears as a single word, and not as a collocation.</p>
+
+        <p>The unique feature of the WordCloud Generator is the ability to sort phrases by their relevance scores. The score is generated in part by reducing words to their word stem, base, or root form in a process called <a href="https://en.wikipedia.org/wiki/Stemming">stemming</a>. For example, the algorithm reduces the words “fishing”, “fished”, and “fisher” to the stem “fish”. The algorithm first calculates how frequently a stemmed term occurs in the document divided by the total number of terms in the document - this produces the term frequency (TF) for each term. The TF is then multiplied by the Inverse Document Frequency (IDF), a weight that indicates how often a word is used across documents. The more often a term appears, the lower its IDF score. The resulting TF-IDF score, or the relevancy score, for each term, takes into account both the “frequency” and “uniqueness” of the term.  MonkeyLearn also prevents common English stopwords from a fixed list, such as “the” or “for”, from appearing in the world cloud.  
+
+        <p>Because the WordCloud Generator algorithm pulls from an English dictionary of IDFs and an English list of stopwords, the word clouds generated from English text files will generally surface fewer common stopwords than non-English text files and include more unique terms and phrases for further analysis.</p>
+
+        <p>To learn more about how the Word Cloud Generator works, please consult <a href="https://help.monkeylearn.com/en/articles/5504716-word-cloud-faq">MonkeyLearn’s FAQ page</a>.</p>
+
 
     </body>
 </html>
