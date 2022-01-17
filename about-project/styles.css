@@ -90,6 +90,31 @@ a {
     cursor: pointer;
 }
 
+.leader {
+
+  float:  right;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 80px;
+  width: 350px;
+  height: 350px;
+
+}
+
+.data {
+
+  float:  left;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+  width: 250px;
+  height: 215px;
+
+}
+
 .cloud {
 
   float:  left;
@@ -100,18 +125,6 @@ a {
   padding-bottom: 50px;
   width: 250px;
   height: 250px;
-
-}
-
-.leader {
-
-  float:  right;
-  vertical-align: middle;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-bottom: 80px;
-  width: 350px;
-  height: 350px;
 
 }
 
