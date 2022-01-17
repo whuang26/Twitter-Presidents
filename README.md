@@ -11,7 +11,7 @@ Before you can get started, you need to get your Terminal to be using a bash she
 
 You will also be using Python, a programming language, to execute the script and generate a CSV file. Once your Terminal is using a bash shell, type the following command and hit "Enter" to install Python: `brew install python`
 
-### Step-by-step Instructions
+### Step-by-Step Instructions
 Once your Terminal is using a bash shell, you'll need to install **snscrape** and **pandas**. 
 
 snscrape is a scraper for social networking services like Twitter, and allows you to scrape different kinds of Twitter data. To learn more about snsscrape, visit: https://github.com/JustAnotherArchivist/snscrape
@@ -36,7 +36,7 @@ If you want to edit the timeframe of the scrapped Tweets, change the green data 
 	```
 	python3 /Users/whuang/Desktop/TwitterProject/Obama.py
 	```
-Again, be sure to repace "whuang" with your Mac username.
+Again, be sure to replace "whuang" with your Mac username.
 
 6. You will receive this error in your Terminal:
 	```
