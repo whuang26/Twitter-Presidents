@@ -9,12 +9,7 @@ If you would like to scrape Twitter data for any user over a specified period of
 ### Setup
 Before you can get started, you need to get your Terminal to be using a bash shell. Follow the first two steps in this README to do so: https://github.com/code4policy/modules/tree/main/setup
 
-You will also be using Python, a programming language, to execute the script and generate a CSV file. Once your Terminal is using a bash shell, type the following command and hit "Enter" to install Python:
-	
-```
-	pip3 install snscrape
-	pip3 install pandas
-	```
+You will also be using Python, a programming language, to execute the script and generate a CSV file. Once your Terminal is using a bash shell, type the following command and hit "Enter" to install Python: `brew install python`
 
 ### Step-by-step Instructions
 Once your Terminal is using a bash shell, you'll need to install **snscrape** and **pandas**. 
