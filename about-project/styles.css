@@ -1,0 +1,62 @@
+h1, h2, body {
+
+  font-family:  "Helvetica";
+
+}
+
+h1 {
+
+	background-color: #b9d7ea;
+	text-align: center;
+	font-size: 5em;
+  	-webkit-text-stroke: 4px #769fcd;
+  	-webkit-text-fill-color: white;
+}
+
+#homebutton {
+
+	object-fit: fill;
+	max-height: 30px;
+	max-width: 35px;
+}
+
+.topnav {
+
+    background-color: #b9d7ea;
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #284184;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #284184;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: #284184;
+  border: #284184;
+  border-width: 10px;
+  padding-right: 15px;
+}
+
+.topnav-right {
+  float: right;
+  text-shadow: darkblue;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 5px;
+}
+
+#test {
+    cursor: pointer;
+}
