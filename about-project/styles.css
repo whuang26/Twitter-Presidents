@@ -4,6 +4,13 @@ h1, h2, body {
 
 }
 
+.outer-box-frame {
+  margin-top: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+}
+
 h1 {
 
 	background-color: #b9d7ea;
@@ -11,6 +18,29 @@ h1 {
 	font-size: 5em;
   	-webkit-text-stroke: 4px #769fcd;
   	-webkit-text-fill-color: white;
+}
+
+h2 {
+
+  font-size: 40px;
+  color:  #284184;
+
+}
+
+p {
+
+  font-size: 25px;
+  text-align: justify;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  line-height: 40px;
+}
+
+a {
+
+  font-size: 25px;
 }
 
 #homebutton {
@@ -59,4 +89,50 @@ h1 {
 
 #test {
     cursor: pointer;
+}
+
+.cloud {
+
+  float:  left;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+  width: 250px;
+  height: 250px;
+
+}
+
+.leader {
+
+  float:  left;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  width: 400px;
+  height: 400px;
+
+}
+
+.githubcat {
+
+  float:  left;
+  vertical-align: middle;
+  padding: 50px;
+  width: 250px;
+  height: 200px;
+
+}
+
+.twitterbird {
+
+  float:  left;
+  vertical-align: middle;
+  padding: 60px;
+  width: 250px;
+  height: 325px;
+
+}
 }
