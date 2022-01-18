@@ -3,7 +3,7 @@
 A visualization of Twitter data from four prominent world leaders: U.S. President Joe Biden, Indian Prime Minister Narendra Modi, Turkish President Recep Tayyip Erdoğan, and Mexican President Andrés Manuel López Obrador.
 
 ## Data Gathering (Scraping Twitter Data into a CSV File)
-Our project team wrote a Python script that scraped Twitter data from the four world leaders into a newly created CSV file with six headers: Text (contents of the Tweet), User (the Twitter user handle), Date (date of the Tweet), Favs (number of Favorites for the Tweet), Retweets (number of Retweets for the Tweet), and Replies (number of Replies for the Tweet).
+Our project team wrote a Python script that scraped Twitter data from the four world leaders into a newly created CSV file with six headers: Text (contents of the tweet), User (the Twitter user handle), Date (date of the tweet), Favs (number of favorites for the tweet), Retweets (number of retweets for the tweet), and Replies (number of replies for the tweet).
 
 If you would like to scrape Twitter data for any user over a specified period of time, follow the instructions below.
 
@@ -51,9 +51,9 @@ pandas is open source, BSD-licensed library providing high-performance, easy-to-
 
 ## Optional: Data Cleaning 
 
-Since the visualization techniques we will use do not take the URLs, mentions, hashtags in the tweets into account while analyzing the data, we will not clean the scraped tweets. However, if you'd like to for your own data, we recommend using Tweet Preprocessor, which is a preprocessing library for tweet data written in Python.
+Since the visualization techniques we will use do not take the URLs, mentions, hashtags in the tweets into account while analyzing the data, we will not clean the scraped tweets. However, if you'd like to do so for your own data, we recommend using Tweet Preprocessor, which is a preprocessing library for tweet data written in Python.
 
-Tweet Preprocessor currently supports cleaning, tokenizing, and parsing URLs, hashtags, mentions, reserved words (RT, FAV), emojis, smileys. The library only supports JSON and .txt file formats. Therefore, you may need to convert your CSV file into a JSON file first to use this library.
+Tweet Preprocessor currently supports cleaning, tokenizing, and parsing URLs, hashtags, mentions, reserved words (RT, FAV), emojis, and smileys. The library only supports JSON and .txt file formats. Therefore, you may need to convert your CSV file into a JSON file first to use this library.
 
 Detailed information on Tweet Preprocessor: https://pypi.org/project/tweet-preprocessor/
 
@@ -73,28 +73,28 @@ If you would like to create a MonkeyLearn word cloud using your scraped Twitter 
 
 3. Locate and upload your .csv file of scraped Twitter data, and click "Generate cloud".
 
-4. You now have your word cloud! On the top bar, you can adjust the color, font, and the number of terms in your cloud (up to 100 terms). You can also sort the terms by **Relevance** or **Frequency** on the right bar. To better understand the differences between the two results, read our explanation here: https://whotweetswhat.works/about-project/index.html 
+4. You now have your word cloud! On the top bar, you can adjust the color, font, and the number of terms in your cloud (up to 100 terms). You can also sort the terms by **Relevance** or **Frequency** on the right bar. To better understand the difference between the two results, read our explanation here: https://whotweetswhat.works/about-project/index.html 
 
 5. Once you are satisfied with the appearance of your word cloud, you can click the blue "Download" button on the top right corner. You can then download either a .svg or .png image file of your word cloud. You also have the option to download a .csv of the word cloud terms with three headers: **Word** (the generated term), **Count** (the total count of the term in the document uploaded), and **Relevance** (the relevance score for the term). 
 
 ## Data Visualization D3 Bar Chart of Most Tweeted Terms 
 
-Our project team used Observablehq to create this visualization 
+Our project team used Observable to create this visualization. 
 
 ### Setup
 
-To use Observablehq, create an account on the site. You can complete this visualization by forking code from an existing bar chart or following the step-by-step instructions below.  
+To use Observable, create an account on the website here: https://observablehq.com/about. You can complete this visualization by forking code from an existing bar chart or following the step-by-step instructions below.  
 
 ### Step-by-Step Instructions
 
-1. Create a blank notebook on ObeservableHQ. Insert a new cell and import your data to the file. Remember we are only changing this code to suit our bar chart requirements, so change the lyric column in your data set and add the the leaders tweets in its place. Do add attachment, presh command+shift+u and select the file:
+1. Create a blank notebook on Obeservable. Insert a new cell and import your data to the file. Remember, you are only changing this code to suit your bar chart requirements, so change the lyric column in your dataset and add the the leaders' tweets in its place. Make sure to add attachment, press command + shift + U and select the file:
 
 	```
 	FileAttachment("your_file_name.csv")
 	```
 Running this command will allow you to view the data you have uploaded. 
 
-2. Add the following D3.js javascript code and create a CSV loop calling csvParse to parse the input string. This returns an array of objects in each row. 
+2. Add the following D3.js javascript code and create a csv loop calling csvParse to parse the input string. This returns an array of objects in each row. 
 
 	```
 	d3 = {
@@ -113,7 +113,7 @@ Running this command will allow you to view the data you have uploaded.
  	}
 	```
 
-3. Make an empty array and convert to lover case, clean up text
+3. Make an empty array and convert to lower case, clean up text:
 
 	```
 	lyrics = [ ]
@@ -130,7 +130,7 @@ Running this command will allow you to view the data you have uploaded.
 
 	```
 
-4. Add stopwords as per your language requirements. You can search the internet, specifically for github for opensource, forkable stopwords. 
+4. Add stopwords based on your language requirements. You can search online, especially on GitHub, for open-source, forkable stopwords. 
 
 	```
 	newLyrics = lyrics.join(' ').replace(/[.,\/#!""'$%\?^&\*;:{}=\-_`~()0-9]/g,"").toLowerCase()
@@ -141,7 +141,7 @@ Running this command will allow you to view the data you have uploaded.
 	stopword = [Add stop words here]
 
 	```
-5. The next step is to remove all the stopwords from the text. 
+5. Remove all the stopwords from the text: 
 
 	```
 	remove_stopwords = function(str) {
@@ -163,7 +163,7 @@ Running this command will allow you to view the data you have uploaded.
 
 	```
 
-6. Get string frequency for each lyric 
+6. Get string frequency for each lyric: 
 
 	```
 	strFrequency = function (stringArr) { //es6 way of getting 	frequencies of words
@@ -179,7 +179,7 @@ Running this command will allow you to view the data you have uploaded.
 
 	```
 
-7. Create a function to return the first n items in the object and sort the frequencies to be max to min
+7. Create a function to return the first n items in the object and sort the frequencies to be maximum to minimum:
 
 	```
 	sortedObj = Object.fromEntries(
@@ -188,7 +188,7 @@ Running this command will allow you to view the data you have uploaded.
 	)
 
 	```
-8. Set attributes of the chart/graph as per your requirement:
+8. Set attributes of the chart/graph based on your requirement:
 
 	```
 	margin = ({top: 20, right: 0, bottom: 30, left: 40})
@@ -235,7 +235,7 @@ Running this command will allow you to view the data you have uploaded.
 
 	```
 
-9. Create an svg and run the program 
+9. Create a .svg file and run the script: 
 
 	```
 	{
@@ -283,4 +283,4 @@ Running this command will allow you to view the data you have uploaded.
 	}
 	```
 
-This process has been adapted from an existing interactive chart already published on oberservablehq. You can use other similar charts on obeservable to create bar chart of your requirement. 
+This process was adapted from an existing interactive chart already published on Observable. You can use other similar charts on Obeservable to create your desired bar chart. 
