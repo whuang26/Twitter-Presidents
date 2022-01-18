@@ -26,9 +26,9 @@ pandas is open source, BSD-licensed library providing high-performance, easy-to-
 
 2. Download the Python script and save it somewhere. The script can be found on this page: https://github.com/whuang26/Twitter-Presidents/tree/main/scripts. We recommend saving it to your desktop in a folder. Hypothetically, let's name this folder "TwitterProject". You can rename the script - for example, if you want to scrape Tweets from Barack Obama, you might rename it to "Obama.py".
 
-3. Customize the script for the specific Twitter user you want to scrape from and the specific timeframe. To change the user, change the green "from:@JoeBiden" field in line 23 to another user. For example, if you want to scrape Tweets from Barack Obama instead, edit the field to "from:@BarackObama".
+3. Edit the "Obama.py" Python script by right-clicking it and opening it with Sublime Text or another text editor. You can now customize the Python script for the specific Twitter user you want to scrape from and the specific timeframe. To change the user, change the green "from:@JoeBiden" field in line 23 to another user. For example, if you want to scrape Tweets from Barack Obama instead, edit the field to "from:@BarackObama".
 
-If you want to edit the timeframe of the scrapped Tweets, change the green data parameters "since:2021-01-01 until:2022-01-01" in line 23. For example, if you want to scrape all of Barack Obama's Tweets from 2020 to 2021, edit the field to "since:2020-01-01 until:2022-01-01".
+	If you want to edit the timeframe of the scrapped Tweets, change the green data parameters "since:2021-01-01 until:2022-01-01" in line 23. For example, if you want to scrape all of Barack Obama's Tweets from 2020 to 2021, edit the field to "since:2020-01-01 until:2022-01-01".
 
 4. In line 41, change the green filepath to where you want the .csv file output to be created. You can also name your file.csv from this filepath. For example, if you are using a Mac and want to output the .csv file with the name "tweets_Obama" to the TwitterProject folder on your desktop from step 2, your filepath would be "/Users/whuang/Desktop/TwitterProject/tweets_Obama.csv" - be sure to replace "whuang" with your Mac username.
 
@@ -40,8 +40,8 @@ Again, be sure to replace "whuang" with your Mac username.
 
 6. You will receive this error in your Terminal:
 	```
-	>FutureWarning: username is deprecated, use user.username instead
-  	>tweet_list = [tweet.content, tweet.username, tweet.date,tweet.likeCount,tweet.retweetCount,tweet.replyCount]
+	FutureWarning: username is deprecated, use user.username instead
+  	tweet_list = [tweet.content, tweet.username, tweet.date,tweet.likeCount,tweet.retweetCount,tweet.replyCount]
   	```
 
-Do not worry! Your .csv file should still have been generated - this error message has more to do with an internal change Twitter made to their API.
+	Do not worry! Your .csv file should still have been generated - this error message has more to do with an internal change Twitter made to their API.
