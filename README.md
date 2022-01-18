@@ -36,7 +36,7 @@ pandas is open source, BSD-licensed library providing high-performance, easy-to-
 	```
 	python3 /Users/whuang/Desktop/TwitterProject/Obama.py
 	```
-Again, be sure to replace "whuang" with your Mac username.
+	Again, be sure to replace "whuang" with your Mac username.
 
 6. You will receive this error in your Terminal:
 	```
@@ -45,3 +45,19 @@ Again, be sure to replace "whuang" with your Mac username.
   	```
 
 	Do not worry! Your .csv file should still have been generated - this error message has more to do with an internal change Twitter made to their API.
+
+## Creating Word Clouds 
+There are many online tools that allow you to upload a text file and it will generate a word cloud. Our choice for this project is MonkeyLearn's WordCloud Generator. If you want to learn why we chose MonkeyLearn, you can read our explanation on this page: https://whotweetswhat.works/about-project/index.html 
+
+If you would like to create a MonkeyLearn word cloud using your scraped Twitter data, follow the instructions below.
+
+### Step-by-Step Instructions
+1. Generate your .csv file of scraped Twitter data by following the instructions above for **Data Gathering**. 
+
+2. Go to https://monkeylearn.com/word-cloud/ and click the "Upload text file" button on the top right corner.
+
+3. Locate and upload your .csv file of scraped Twitter data, and click "Generate cloud".
+
+4. You now have your word cloud! On the top bar, you can adjust the color, font, and the number of terms in your cloud (up to 100 terms). You can also sort the terms by **Relevance** or **Frequency** on the right bar. To better understand the differences between the two results, read our explanation here: https://whotweetswhat.works/about-project/index.html 
+
+5. Once you are satisfied with the appearance of your word cloud, you can click the blue "Download" button on the top right corner. You can then download either a .svg or .png image file of your word cloud. You also have the option to download a .csv of the word cloud terms with three headers: **Word** (the generated term), **Count** (the total count of the term in the document uploaded), and **Relevance** (the relevance score for the term). 
