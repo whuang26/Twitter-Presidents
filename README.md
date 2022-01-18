@@ -1,4 +1,5 @@
 # Twitter-Presidents
+
 A visualization of Twitter data from four prominent world leaders: U.S. President Joe Biden, Indian Prime Minister Narendra Modi, Turkish President Recep Tayyip Erdoğan, and Mexican President Andrés Manuel López Obrador.
 
 ## Data Gathering (Scraping Twitter Data into a CSV File)
@@ -7,11 +8,13 @@ Our project team wrote a Python script that scraped Twitter data from the four w
 If you would like to scrape Twitter data for any user over a specified period of time, follow the instructions below.
 
 ### Setup
+
 Before you can get started, you need to get your Terminal to be using a bash shell. Follow the first two steps in this README to do so: https://github.com/code4policy/modules/tree/main/setup
 
 You will also be using Python, a programming language, to execute the script and generate a CSV file. Once your Terminal is using a bash shell, type the following command and hit "Enter" to install Python: `brew install python`
 
 ### Step-by-Step Instructions
+
 Once your Terminal is using a bash shell, you'll need to install **snscrape** and **pandas**. 
 
 snscrape is a scraper for social networking services like Twitter, and allows you to scrape different kinds of Twitter data. To learn more about snsscrape, visit: https://github.com/JustAnotherArchivist/snscrape
@@ -23,12 +26,11 @@ pandas is open source, BSD-licensed library providing high-performance, easy-to-
 	pip3 install snscrape
 	pip3 install pandas
 	```
-
 2. Download the Python script and save it somewhere. The script can be found on this page: https://github.com/whuang26/Twitter-Presidents/tree/main/scripts. We recommend saving it to your desktop in a folder. Hypothetically, let's name this folder "TwitterProject". You can rename the script - for example, if you want to scrape Tweets from Barack Obama, you might rename it to "Obama.py".
 
-3. Customize the script for the specific Twitter user you want to scrape from and the specific timeframe. To change the user, change the green "from:@JoeBiden" field in line 23 to another user. For example, if you want to scrape Tweets from Barack Obama instead, edit the field to "from:@BarackObama".
+3. Edit the "Obama.py" Python script by right-clicking it and opening it with Sublime Text or another text editor. You can now customize the Python script for the specific Twitter user you want to scrape from and the specific timeframe. To change the user, change the green "from:@JoeBiden" field in line 23 to another user. For example, if you want to scrape Tweets from Barack Obama instead, edit the field to "from:@BarackObama".
 
-If you want to edit the timeframe of the scrapped Tweets, change the green data parameters "since:2021-01-01 until:2022-01-01" in line 23. For example, if you want to scrape all of Barack Obama's Tweets from 2020 to 2021, edit the field to "since:2020-01-01 until:2022-01-01".
+	If you want to edit the timeframe of the scrapped Tweets, change the green data parameters "since:2021-01-01 until:2022-01-01" in line 23. For example, if you want to scrape all of Barack Obama's Tweets from 2020 to 2021, edit the field to "since:2020-01-01 until:2022-01-01".
 
 4. In line 41, change the green filepath to where you want the .csv file output to be created. You can also name your file.csv from this filepath. For example, if you are using a Mac and want to output the .csv file with the name "tweets_Obama" to the TwitterProject folder on your desktop from step 2, your filepath would be "/Users/whuang/Desktop/TwitterProject/tweets_Obama.csv" - be sure to replace "whuang" with your Mac username.
 
@@ -36,23 +38,39 @@ If you want to edit the timeframe of the scrapped Tweets, change the green data 
 	```
 	python3 /Users/whuang/Desktop/TwitterProject/Obama.py
 	```
-Again, be sure to replace "whuang" with your Mac username.
+	Again, be sure to replace "whuang" with your Mac username.
 
 6. You will receive this error in your Terminal:
 	```
-	>FutureWarning: username is deprecated, use user.username instead
-  	>tweet_list = [tweet.content, tweet.username, tweet.date,tweet.likeCount,tweet.retweetCount,tweet.replyCount]
+	FutureWarning: username is deprecated, use user.username instead
+  	tweet_list = [tweet.content, tweet.username, tweet.date,tweet.likeCount,tweet.retweetCount,tweet.replyCount]
   	```
+	Do not worry! Your .csv file should still have been generated - this error message has more to do with an internal change Twitter made to their API.
 
-Do not worry! Your .csv file should still have been generated - this error message has more to do with an internal change Twitter made to their API.
+## Creating Word Clouds 
 
+There are many online tools that allow you to upload a text file and it will generate a word cloud. Our choice for this project is MonkeyLearn's WordCloud Generator. If you want to learn why we chose MonkeyLearn, you can read our explanation on this page: https://whotweetswhat.works/about-project/index.html 
 
+If you would like to create a MonkeyLearn word cloud using your scraped Twitter data, follow the instructions below.
 
+### Step-by-Step Instructions
+
+1. Generate your .csv file of scraped Twitter data by following the instructions above for **Data Gathering**. 
+
+2. Go to https://monkeylearn.com/word-cloud/ and click the "Upload text file" button on the top right corner.
+
+3. Locate and upload your .csv file of scraped Twitter data, and click "Generate cloud".
+
+4. You now have your word cloud! On the top bar, you can adjust the color, font, and the number of terms in your cloud (up to 100 terms). You can also sort the terms by **Relevance** or **Frequency** on the right bar. To better understand the differences between the two results, read our explanation here: https://whotweetswhat.works/about-project/index.html 
+
+5. Once you are satisfied with the appearance of your word cloud, you can click the blue "Download" button on the top right corner. You can then download either a .svg or .png image file of your word cloud. You also have the option to download a .csv of the word cloud terms with three headers: **Word** (the generated term), **Count** (the total count of the term in the document uploaded), and **Relevance** (the relevance score for the term). 
 
 ## Data Visualization D3 Bar Chart of Most Tweeted Terms 
+
 Our project team used Observablehq to create this visualization 
 
 ### Setup
+
 To use Observablehq, create an account on the site. You can complete this visualization by forking code from an existing bar chart or following the step-by-step instructions below.  
 
 ### Step-by-Step Instructions
@@ -82,7 +100,6 @@ Running this command will allow you to view the data you have uploaded.
   		}));
  	}
 	```
-
 
 3. Make an empty array and convert to lover case, clean up text
 
