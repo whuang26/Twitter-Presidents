@@ -143,7 +143,7 @@
 
           <br></br>
 
-          <p>The word clouds were generated using the <a href="https://monkeylearn.com/word-cloud/">WordCloud Generator</a> by MonkeyLearn. The WordCloud Generator allows any user to upload a text file and it will generate a visual representation of the text, in which the words appear bigger the more often they are mentioned. The Generator from MonkeyLearn is programmed with an algorithm to automatically detect collocations, which are words that often go together. This algorithm allows for phrases to be generated instead of simply single words, and often provide more context.</p>
+          <p> The WordCloud was created using <a href="https://monkeylearn.com/word-cloud/">the WordCloud Generator</a> by MonkeyLearn. The WordCloud Generator allows any user to upload a text file and it will generate a visual representation of the text, in which the words appear bigger the more often they are mentioned. The Generator from MonkeyLearn is programmed with an algorithm to automatically detect collocations, which are words that often go together. This algorithm allows for phrases to be generated instead of simply single words, and often provide more context.</p>
 
           <p>Once a user uploads a text file, the WordCloud Generator allows the user to sort the words and phrases by relevancy or frequency. Sorting by frequency will put the words/phrases that appear the most often at the top. MonkeyLearn uses a relative frequency, which is frequency normalized by the maximum value in which valid terms in other terms are taken into account. For example, if you have “dog” and “hot dog”, the weight of “dog” is removed from the weight of “hot dog”. The frequency of the word “dog” is then calculated only when it appears as a single word, and not as a collocation.</p>
 
@@ -154,13 +154,30 @@
           <p>To learn more about how the Word Cloud Generator works, please consult <a href="https://help.monkeylearn.com/en/articles/5504716-word-cloud-faq">MonkeyLearn’s FAQ page</a>.</p>
 
           <br></br>
-          
+
+          <h2>D3 Bar Chart Visualization</h2> 
+
+          <img src="https://www.championx.com/assets/images/content/152_bar_chart_arrow_growth_outline.gif" class="D3chart" alt="D3chart">
+
+          <br></br>
+
+          <p>The interactive D3 bar chart was adapted from an existing chart on <a href="https://observablehq.com/about">Observablehq</a>. Observable provides a data visualization platform for developers, data scientists, journalists, and educators to explore, analyze, and visualize data on the web together. It enables users to create complex graphs, charts, and other visual representations of data. Observable is a Jupyter Notebook-like tool that makes it easy to quickly run JavaScript code in cells so you can see what you're doing in real-time. </p>
+
+          <p>Observable notebooks are written in JavaScript but with a few changes.  This notebook, and every Observable notebook, is composed of cells. These are basic building blocks for the entire document, and can contain text, charts, images, and more.  The code for the notebook is contained in cells, and to know how to open, close, and evaluate them. Cells come in two primary forms: expressions and blocks. Expression cells are concise and are intended for simple definitions. Blocks are surrounded by curly braces and are intended for more complex definitions, such as ones involving local variables or loops. To learn more about Observable, click <a href="https://observablehq.com/@observablehq/introduction-to-code">here.</a> </p>
+
+          <p>To create the visualization, the project team used an existing observable interactive chart showing US artist Taylor Swift’s most used words from her lyrics. This <a href="https://www.twilio.com/blog/build-interactive-bar-chart-taylor-swift-lyrics">tutorial</a> gave a high-level perspective on the steps required to create a similar visualization for our use case. In addition, the project team forked the code for this interactive chart and manipulated the data as well as the code to fit twitter data of the four political leaders we chose to analyze.</p> 
+
+          <p>Limitations to this methodology is an existing interactive chart was adapted. Additionally, we used to stop words to ensure that the text analysis did not throw up common conjunctions, pronouns as well as punctuations. The English stopwords were sourced from existing code in the Taylor Swift interactive chart. We used the opensource resources available on internet for Turkish, Hindi, and Spanish stopwords. These resources were not exhaustive or entirely accurate and manual additions were made as per the team’s judgement.</p>
+
+          <p>To learn more about how the D3 bar chart was built and access the resources we used, please consult this project's Git Hub page.</p>
+
+          <br></br>
+
           <h2>GitHub Repository</h2>
 
           <img src="../images/gifs/githubicon.gif" class="githubcat" alt="Github">
 
-          <br></br>
-
+        
           <br></br>
 
           <p>This website was created as a final project for the <a href="https://www.hks.harvard.edu/courses/programming-and-data-policymakers/" target="_blank"><b>DPI 691M: Programming and Data for Policymakers</b></a> course at Harvard Kennedy School. Its code is public and can be accessed in <a href="https://github.com/whuang26/Twitter-Presidents/" target="_blank">this repository</a>.</p> 
