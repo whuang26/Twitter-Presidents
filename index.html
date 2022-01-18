@@ -116,6 +116,17 @@
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">The most frequent terms in President Biden’s Tweets are also connected to the legislation as well. The top five terms are: “build” (127 times), “jobs” (85 times), “economy” (67 times), “country” (60 times), and “better agenda” (32 times). These terms paint a picture of a President whose goal in 2021 is to support and champion legislation that would dramatically improve the economic and social infrastructure of the U.S.</p>
 
+            <div id="observablehq-biden_plot-fe9c4263"></div>
+            <p>Credit: <a href="https://observablehq.com/@rodrigo-ptf/user-reaction-to-joe-bidens-tweets-2021">User Reaction to Joe Biden&#039;s Tweets (2021) by Rodrigo Pérez-Tejada</a></p>
+
+            <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@rodrigo-ptf/user-reaction-to-joe-bidens-tweets-2021.js?v=3";
+            new Runtime().module(define, name => {
+              if (name === "biden_plot") return new Inspector(document.querySelector("#observablehq-biden_plot-fe9c4263"));
+            });
+            </script>
+
           </div>
 
           <div class="container">
