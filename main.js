@@ -1,15 +1,16 @@
 
 // Facebook share button
 
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
+(function(d, s, id) {
+  
+  var js, fjs = d.getElementsByTagName(s)[0];
 
-      if (d.getElementById(id)) return;
+    if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
         js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
         fjs.parentNode.insertBefore(js, fjs);
 
-      }(document, 'script', 'facebook-jssdk'));
+    }(document, 'script', 'facebook-jssdk'));
 
 // Twitter share script
 
@@ -83,3 +84,15 @@ window.twttr = (function(d, s, id) {
          })
          .text(function(d) { return d.text; });
  }
+
+//Ternary Plot - Biden
+
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+
+import define from "https://api.observablehq.com/@rodrigo-ptf/user-reaction-to-joe-bidens-tweets-2021.js?v=3";
+
+new Runtime().module(define, name => {
+
+  if (name === "line") return new Inspector(document.querySelector("#observablehq-line-28b37733"));
+  
+});
