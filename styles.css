@@ -13,6 +13,66 @@ h1 {
   	-webkit-text-fill-color: white;
 }
 
+.outer-box-frame {
+  margin-top: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+}
+
+.container {
+
+  position: relative;
+  color: white;
+}
+
+.top-left {
+
+  position: absolute;
+  padding-top: 200px;
+  padding-left: 50px;
+  top: 0px;
+  left: 0px;
+}
+
+.top-left-genesis {
+
+  position: absolute;
+  padding-top: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  top: 0px;
+  left: 0px;
+}
+
+.top-right {
+
+  position: absolute;
+  text-align: right;
+  padding-top: 200px;
+  padding-right: 50px;
+  top: 0px;
+  right: 0px;
+}
+
+.feature {
+
+  width: 100%;
+
+}
+
+.wordcloud {
+
+  float: left;
+  width: 675px;
+  height: 675px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 25px;
+  padding-bottom: 40px;
+
+}
+
 #homebutton {
 
 	object-fit: fill;
