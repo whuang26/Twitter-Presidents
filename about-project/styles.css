@@ -128,6 +128,19 @@ a {
 
 }
 
+.D3chart {
+
+  float:  left;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+  width: 250px;
+  height: 250px;
+
+}
+
 .githubcat {
 
   float:  left;
