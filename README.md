@@ -210,43 +210,43 @@ Running this command will allow you to view the data you have uploaded.
 
 	```
 	{
-  const svg = d3.create("svg")
+  	const svg = d3.create("svg")
       .attr("viewBox", [0, 0, width, height]);
 
-  // Call tooltip
-  tooltip;
+  	// Call tooltip
+  	tooltip;
 
   	svg.append("g")
   	.selectAll("rect")
   	.data(final)
   	.enter().append("rect")
-    .attr('x', d => x(d.lyric))
-    .attr('y', d => y(d.freq))
-    .attr('width', x.bandwidth())
-    .attr('height', d => y(0) - y(d.freq))
-    .style("padding", "3px")
-    .style("margin", "1px")
-    .style("width", d => `${d * 10}px`)
-    .text(d => d)
-    .attr("fill", "#CEBEDE")
-    .attr("stroke", "#FFB9EC")
-    .attr("stroke-width", 1)
+   	 .attr('x', d => x(d.lyric))
+    	.attr('y', d => y(d.freq))
+    	.attr('width', x.bandwidth())
+    	.attr('height', d => y(0) - y(d.freq))
+    	.style("padding", "3px")
+    	.style("margin", "1px")
+    	.style("width", d => `${d * 10}px`)
+    	.text(d => d)
+    	.attr("fill", "#CEBEDE")
+    	.attr("stroke", "#FFB9EC")
+    	.attr("stroke-width", 1)
   	.on("mouseover", function(d) {
-      tooltip.style("visibility", "visible").text(d.lyric + ": " + d.freq);
-      d3.select(this).attr("fill", "#FDE5BD");
-    })
-    .on("mousemove", d => tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px").text(d.lyric + ": " + d.freq))
-    .on("mouseout", function(d) {
-      tooltip.style("visibility", "hidden");
-      d3.select(this)
-    .attr("fill", "#CEBEDE")
-    });
+      		tooltip.style("visibility", "visible").text(d.lyric + ": " + d.freq);
+     	 d3.select(this).attr("fill", "#FDE5BD");
+   	 })
+    	.on("mousemove", d => tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px").text(d.lyric + ": " + d.freq))
+   	.on("mouseout", function(d) {
+      	tooltip.style("visibility", "hidden");
+      	d3.select(this)
+    	.attr("fill", "#CEBEDE")
+    	});
 
   
   	svg.append("g")
-      .call(xAxis);
+      	.call(xAxis);
   	svg.append("g")
-      .call(yAxis);
+      	.call(yAxis);
   
   	svg.call(yTitle);
 
