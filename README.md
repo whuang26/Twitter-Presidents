@@ -47,6 +47,18 @@ pandas is open source, BSD-licensed library providing high-performance, easy-to-
   	```
 	Do not worry! Your .csv file should still have been generated - this error message has more to do with an internal change Twitter made to their API.
 
+
+
+## Optional: Data Cleaning 
+
+Since the visualization techniques we will use do not take the URLs, mentions, hashtags in the tweets into account while analyzing the data, we will not clean the scraped tweets. However, if you'd like to for your own data, we recommend using Tweet Preprocessor, which is a preprocessing library for tweet data written in Python.
+
+Tweet Preprocessor currently supports cleaning, tokenizing, and parsing URLs, hashtags, mentions, reserved words (RT, FAV), emojis, smileys. The library only supports JSON and .txt file formats. Therefore, you may need to convert your CSV file into a JSON file first to use this library.
+
+Detailed information on Tweet Preprocessor: https://pypi.org/project/tweet-preprocessor/
+
+
+
 ## Creating Word Clouds 
 
 There are many online tools that allow you to upload a text file and it will generate a word cloud. Our choice for this project is MonkeyLearn's WordCloud Generator. If you want to learn why we chose MonkeyLearn, you can read our explanation on this page: https://whotweetswhat.works/about-project/index.html 
