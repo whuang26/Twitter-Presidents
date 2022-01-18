@@ -31,6 +31,11 @@ window.twttr = (function(d, s, id) {
       return t;
     }(document, "script", "twitter-wjs"));
 
+// Whatsapp share script
+      function openWhatsApp() {  
+      window.open('whatsapp://send?text=Check out this website to learn more about the Twitter activity of world leaders! https://whotweetswhat.works/index.html');  
+      } 
+
 // Word clouds
 
 // List of words
