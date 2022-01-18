@@ -15,24 +15,23 @@ h1 {
 
 	background-color: #b9d7ea;
 	text-align: center;
-	font-size: 5em;
+	font-size: 4em;
   	-webkit-text-stroke: 4px #769fcd;
   	-webkit-text-fill-color: white;
 }
 
 h2 {
 
-  font-size: 40px;
+  font-size: 30px;
   color:  #284184;
 
 }
 
 p {
 
-  font-size: 25px;
+  font-size: 20px;
   text-align: justify;
   padding-top: 0px;
-  padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
   line-height: 40px;
@@ -40,7 +39,7 @@ p {
 
 a {
 
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #homebutton {
@@ -91,6 +90,31 @@ a {
     cursor: pointer;
 }
 
+.leader {
+
+  float:  right;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 80px;
+  width: 350px;
+  height: 350px;
+
+}
+
+.data {
+
+  float:  left;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+  width: 250px;
+  height: 215px;
+
+}
+
 .cloud {
 
   float:  left;
@@ -104,15 +128,16 @@ a {
 
 }
 
-.leader {
+.barchart {
 
   float:  left;
   vertical-align: middle;
-  padding-top: 10px;
+  padding-top: 50px;
+  padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
-  width: 400px;
-  height: 400px;
+  padding-bottom: 50px;
+  width: 300px;
+  height: 300px;
 
 }
 
@@ -131,8 +156,24 @@ a {
   float:  left;
   vertical-align: middle;
   padding: 60px;
-  width: 250px;
-  height: 325px;
+  width: 175px;
+  height: 225px;
 
 }
-}
+
+.footer {
+
+  font-family: Didot, serif;
+  font-size: 20px;
+  width: 100% !important;  
+  max-width: 100% !important;
+  min-width: 100% !important;
+  text-align: center;
+  position: relative;
+  background-color: #ddd !important; 
+  opacity: .5;
+  z-index:100;
+  left: 0;
+  height: 20px;
+
+ }
