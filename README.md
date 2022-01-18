@@ -3,7 +3,7 @@
 A visualization of Twitter data from four prominent world leaders: U.S. President Joe Biden, Indian Prime Minister Narendra Modi, Turkish President Recep Tayyip Erdoğan, and Mexican President Andrés Manuel López Obrador.
 
 ## Data Gathering (Scraping Twitter Data into a CSV File)
-Our project team wrote a Python script that scraped Twitter data from the four world leaders into a newly created CSV file with six headers: Text (contents of the Tweet), User (the Twitter user handle), Date (date of the Tweet), Favs (number of Favorites for the Tweet), Retweets (number of Retweets for the Tweet), and Replies (number of Replies for the Tweet).
+Our project team wrote a Python script that scraped Twitter data from the four world leaders into a newly created CSV file with six headers: Text (contents of the tweet), User (the Twitter user handle), Date (date of the tweet), Favs (number of favorites for the tweet), Retweets (number of retweets for the tweet), and Replies (number of replies for the tweet).
 
 If you would like to scrape Twitter data for any user over a specified period of time, follow the instructions below.
 
