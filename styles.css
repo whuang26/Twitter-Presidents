@@ -71,13 +71,14 @@ h1 {
 
 }
 
-.barchart{
+.barchart {
 
-  right: 80%;
-  width: 675px;
-  height: 675px;
   padding-top: 20px;
-  padding-right: 150px;
+  align-self: left;
+  left: 0%;
+  right: 30%;
+  width: 1025px;
+  height: 500px;
 
 }
 
