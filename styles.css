@@ -71,6 +71,16 @@ h1 {
 
 }
 
+.barchart{
+
+  right: 80%;
+  width: 675px;
+  height: 675px;
+  padding-top: 20px;
+  padding-right: 150px;
+
+}
+
 #homebutton {
 
 	object-fit: fill;

@@ -36,3 +36,5 @@ window.twttr = (function(d, s, id) {
       function openWhatsApp() {  
       window.open('whatsapp://send?text=Check out this website to learn more about the Twitter activity of world leaders! https://whotweetswhat.works/index.html');  
       } 
+
+
