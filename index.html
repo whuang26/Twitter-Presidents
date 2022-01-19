@@ -118,11 +118,29 @@
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">The most frequent terms in President Biden’s Tweets are also connected to the legislation as well. The top five terms by frequency are: “build” (127 times), “jobs” (85 times), “economy” (67 times), “country” (60 times), and “better agenda” (32 times). These terms paint a picture of a President whose goal in 2021 is to support and champion legislation that would dramatically improve the economic and social infrastructure of the U.S.</p>
 
+            <br></br>
+
             <h3 style="text-align: center; color:#284184">Ranking of most tweeted words reinforce wordcloud analysis</h3>
 
-            <img src="/images/barchart/Biden.svg" alt="modichart" class= "barchart" alt="Barchart for US President Joseph Biden ">
+            <img src="/images/barchart/Biden.svg" alt="bidenchart" class= "barchart" alt="Barchart for US President Joseph Biden ">
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">In addition to constructing a word cloud of the most tweeted terms, we also created a bar chart to analyse the most common words used in each leader's tweet. Results of the bar chart analayis for President Biden show that the most common words used either constitute or are similar to the top tweeted terms in the word cloud. However, it is important to note that the bar chart analysis counted words at a higher rate than the word cloud as both tools used varying algorithms to analyse the same data. </p>
+
+            <br></br>
+
+            <h2 style="text-align: center; color:#284184"> Twitter users tend to like President Biden but not endorse him. He's also relatively controversial.</h2>
+
+            <div id="observablehq-biden_plot-bc6bcc88" class="ternary_plot"></div>
+
+            <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@rodrigo-ptf/user-reaction-to-joe-bidens-tweets-2021.js?v=3";
+            new Runtime().module(define, name => {
+              if (name === "biden_plot") return new Inspector(document.querySelector("#observablehq-biden_plot-bc6bcc88"));
+            });
+            </script>
+
+            <p style="text-align: justify; line-height:40px; font-size: 16px;">This plot maps all of President Biden's tweets during 2021 according their number of likes, retweets, and replies as a proportion of the total number of interactions per tweet. According to the <a href="https://fivethirtyeight.com/features/the-worst-tweeter-in-politics-isnt-trump/">ratio theory</a>, if a tweet receives relatively more replies than likes or retweets, it is controversial because it sparks a lengthier discussion than usual. On the other hand, retweets are the highest form of endorsement and <a href="http://cs.wellesley.edu/~pmetaxas/WorkingPapers/Retweet-meaning.pdf">may reflect trust on the user</a>. Compared to the other three public leaders in this analysis, Biden has the second highest proportion of replies on average, and the lowest proportion of retweets. This means that although Twitter users like him, he tends to cause some controversy, and is not frequently endorsed through retweets.</p> 
 
           </div>
 
@@ -175,12 +193,31 @@
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">The terms "healthy life" (twelve times), "good health" (five times), and "ease of living" (five times) are in line with the Prime Minister’s previous use of social media to bring focus on health and quality of life in India.</p>
 
+            <br></br>
+
             <h3 style="text-align: center; color:#284184">Ranking of most tweeted words reinforce wordcloud analysis</h3>
 
             <img src="/images/barchart/Modi.svg" alt="Modichart" class= "barchart" alt="Barchart for Indian Prime Minister Narendra Modi">
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">In addition to constructing a word cloud of the most tweeted terms, we also created a bar chart to analyse the most common words used in each leader's tweet. Results of the bar chart analayis for Prime Minister Modi show that the most common words used either constitute or are similar to the top tweeted terms in the word cloud. However, it is important to note that the bar chart analysis counted words at a higher rate than the word cloud as both tools used varying algorithms to analyse the same data. </p>
 
+            <br></br>
+
+            <h2 style="text-align: center; color:#284184"> Reactions to PM Modi's tweets are highly  uniform and positive. </h2>
+
+            <div id="observablehq-modi_plot-dc6cd1e3" class="ternary_plot">
+
+            <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@rodrigo-ptf/user-reaction-to-narendra-modis-tweets-2021.js?v=3";
+            new Runtime().module(define, name => {
+              if (name === "modi_plot") return new Inspector(document.querySelector("#observablehq-modi_plot-dc6cd1e3"));
+            });
+            </script>
+
+            <p style="text-align: justify; line-height:40px; font-size: 16px;">This plot maps all of PM Modi's tweets during 2021 according their number of likes, retweets, and replies as a proportion of the total number of likes, retweets, and replies as a proportion of the total number of interactions per tweet. According to the <a href="https://fivethirtyeight.com/features/the-worst-tweeter-in-politics-isnt-trump/">ratio theory</a>, if a tweet receives relatively more replies than likes or retweets, it is controversial because it sparks a lengthier discussion than usual. On the other hand, retweets are the highest form of endorsement and <a href="http://cs.wellesley.edu/~pmetaxas/WorkingPapers/Retweet-meaning.pdf">may reflect trust on the user</a>. PM Modi's tweets are the most highly concentrated towards the left corner of the plot out of the four leaders we analyzed, and show a very low proportion of replies. Although the proportion of endorsements through retweets is not particularly high, the plot reflects a mostly uniform positive response to the PM's tweets.</p>
+
+            </div>
 
           </div>
 
@@ -224,11 +261,33 @@
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">"Oaxaca" (21 times) and "Guerrero" (25 times), the other two of AMLO's most tweeted terms, are the names of two underdeveloped Mexican states on which his government has focused its social policy. Welfare, or "bienestar" (21 times), has been another of the administration's pillars, and citizens in these states are among the most heavily targeted by social programs. Finally, another relevant term in AMLO's tweets is "Guardia Nacional" (15 times), or National Guard, a civilian police force to which his administration has been assigning increasingly significant administrative and political roles within the government. Recently, the President announced the plan of merging the National Guard into the Army, a move that <a href="https://www.economist.com/the-americas/2021/04/29/mexicos-president-is-giving-the-armed-forces-new-powers">has been critized</a> given his campaign commitment to demilitarize public safety operations in the country.</p>
 
+            <br></br>
+
             <h3 style="text-align: center; color:#284184">Ranking of most tweeted words reinforce wordcloud analysis</h3>
+
+            <br></br>
 
             <img src="/images/barchart/AMLO.svg" alt="AMLOchart" class= "barchart" alt="Barchart for Mexican President AMLO">
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">In addition to constructing a word cloud of the most tweeted terms, we also created a bar chart to analyse the most common words used in each leader's tweet. Results of the bar chart analayis for President AMLO show that the most common words used either constitute or are similar to the top tweeted terms shown in the word cloud. However, a note that the bar chart analysis counted words at a higher rate than the word cloud as both tools used varying algorithms to analyse the same data. </p>
+
+            <br></br>
+
+            <h2 style="text-align: center; color:#284184">President López Obrador enjoys a high level of endorsements through retweets.</h2>
+
+            <div id="observablehq-amlo_plot-ce7d246b" class="ternary_plot"></div>
+
+            <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@rodrigo-ptf/user-reaction-to-andres-manuel-lopez-obradors-tweets-2021/2.js?v=3";
+            new Runtime().module(define, name => {
+              if (name === "amlo_plot") return new Inspector(document.querySelector("#observablehq-amlo_plot-ce7d246b"));
+            });
+            </script>
+
+            <p style="text-align: justify; line-height:40px; font-size: 16px;">This plot maps all of President López Obrador's tweets during 2021 according their number of likes, retweets, and replies as a proportion of the total number of interactions per tweet. According to the <a href="https://fivethirtyeight.com/features/the-worst-tweeter-in-politics-isnt-trump/">ratio theory</a>, if a tweet receives relatively more replies than likes or retweets, it is controversial because it sparks a lengthier discussion than usual. On the other hand, retweets are the highest form of endorsement and <a href="http://cs.wellesley.edu/~pmetaxas/WorkingPapers/Retweet-meaning.pdf">may reflect trust on the user</a>. On average, AMLO's tweets are the second least controversial in this analysis. More importantly, his tweets enjoy the highest proportion of retweets out of the four public leaders, which may indicate his followers' high level of trust in him.</p>
+
+          </div>
 
           </div>
 
@@ -271,13 +330,30 @@
             <br></br>
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">For President Erdoğan, many of the most relevant terms and phrases are salutations and greetings. The most relevant one is “hayırlı olmasını diliyorum” (32 times), which translates to “I wish you good luck”. Other similar terms in his top ten most relevant terms are “milletimize hayırlı olmasını” (12 times), which translates to “good luck to our nation”, and “tebrik ediyorum” (31 times), which translates to “congratulations”. These terms do not refer to one particular event or legislation that occurred in 2021. Instead, they are used by President Erdoğan to wish for the success of various events throughout the year. For example, he used the phrase “hayırlı olmasını diliyorum” to wish good luck for the opening of the New Adana Stadium on February 19, 2021 <a href="https://twitter.com/RTErdogan/status/1362824271467339777">(link)</a>, for the launch of the Türksat 5A satellite on June 28, 2021 <a href="https://twitter.com/RTErdogan/status/1409500741300109315">(link)</a>, and that the newly launched Turkovac coronavirus vaccine benefit all of humanity on December 22, 2021 <a href="https://twitter.com/RTErdogan/status/1473619005953003523">(link)</a>. The first phrase not to be in a salutation is the 19th one, “gazi mustafa kemal” (five times). Gazi is a Turkish title for veterans and Turkic Muslim champions, and “mustafa kemal” is referring to  Mustafa Kemal Atatürk, the founding father of the Republic of Turkey who served as its first president from 1923 to 1938. The tweets featuring Mustafa Kemal Atatürk are focused on honoring his legacy. For example, President Erdoğan commemorated Turkey’s Republic Day on October 29 by thanking Mustafa Kemal Atatürk and expressing his gratitude for founding the modern Turkish republic <a href="https://twitter.com/RTErdogan/status/1453964816092123136">(link)</a>. Overall, based on an analysis of the most frequent terms and phrases, President Erdoğan uses Twitter to show gratitude for projects and initiatives, and to spotlight positive developments.</p>
-
         
+            <br></br>
+
             <h3 style="text-align: center; color:#284184">Ranking of most tweeted words reinforce wordcloud analysis</h3>
 
             <img src="/images/barchart/Erdogan.svg" alt="Erdoganchart" class= "barchart" alt="Barchart for Turkish President Erdoğan">
 
             <p style="text-align: justify; line-height:40px; font-size: 16px;">In addition to constructing a word cloud of the most tweeted terms, we also created a bar chart to analyse the most common words used in each leader's tweet. Results of the bar chart analayis for President Erdogan show that the most common words used either constitute or are similar to the top tweeted terms shown in the word cloud. However, a note that the bar chart analysis counted words at a higher rate than the word cloud as both tools used varying algorithms to analyse the same data. </p>
+
+            <br></br>
+
+            <h2 style="text-align: center; color:#284184">Reactions to President Erdogan's tweets are the most polarized, showing both high levels of endorsement and controversy.</h2>
+            
+            <div id="observablehq-erdogan_plot-dfd97413" class="ternary_plot"></div>
+
+            <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@rodrigo-ptf/user-reaction-to-recep-tayyip-erdogans-tweets-2021.js?v=3";
+            new Runtime().module(define, name => {
+              if (name === "erdogan_plot") return new Inspector(document.querySelector("#observablehq-erdogan_plot-dfd97413"));
+            });
+            </script>
+
+            <p style="text-align: justify; line-height:40px; font-size: 16px;">This plot maps all of President Erdogan's tweets during 2021 according their number of likes, retweets, and replies as a proportion of the total number of interactions per tweet. According to the <a href="https://fivethirtyeight.com/features/the-worst-tweeter-in-politics-isnt-trump/">ratio theory</a>, if a tweet receives relatively more replies than likes or retweets, it is controversial because it sparks a lengthier discussion than usual. On the other hand, retweets are the highest form of endorsement and <a href="http://cs.wellesley.edu/~pmetaxas/WorkingPapers/Retweet-meaning.pdf">may reflect trust on the user</a>. President Erdogan's highly liked tweets also show a high level of retweets, which means that users who support him also tend to endorse him. However, he shows the widest spread along the replies axis, which reflects the most controversial body of tweets out of the four leaders. In sum, he is the most polarizing figure in our analysis.</p>
 
           </div>
 
