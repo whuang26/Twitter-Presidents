@@ -130,15 +130,7 @@
 
             <h2 style="text-align: center; color:#284184"> Twitter users tend to like President Biden but not endorse him. He's also relatively controversial.</h2>
 
-            <div id="observablehq-biden_plot-bc6bcc88" class="ternary_plot"></div>
-
-            <script type="module">
-            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-            import define from "https://api.observablehq.com/@rodrigo-ptf/user-reaction-to-joe-bidens-tweets-2021.js?v=3";
-            new Runtime().module(define, name => {
-              if (name === "biden_plot") return new Inspector(document.querySelector("#observablehq-biden_plot-bc6bcc88"));
-            });
-            </script>
+            <img src="images/biden_plot.svg">
 
             <br></br>
 
